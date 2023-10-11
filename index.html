@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 align="center">Cadastro</h1>
+    <form action="">
+     
+        <!-- Nome completo do Paciente -->
+        <label for="nome" >Nome completo do Paciente:</label>
+        <input type="text" id="nome" name="nomeCompleto" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email" >Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- CPF -->
+        <label for="cpf" >CPF (apenas números):</label>
+        <input type="number" id="cpf" name="cpf" required>
+        <br><br>
+
+        <!-- Faixa etária -->
+        <label for="faixaEtaria">Faixa etária:</label>
+        <input type="range" id="faixaEtaria" name="faixaEtaria" min="0" max="100" value="50">
+        <br><br>
+
+        <!-- Histórico de consultas -->
+        <label for="historico">Histórico de consultas:</label>
+        <textarea id="historico" name="historicoConsultas" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <!-- Cor preferida -->
+        <label for="corPreferida">Cor preferida:</label>
+        <input type="color" id="corPreferida" name="corPreferida">
+        <br><br>
+
+        <!-- Data de Nascimento -->
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento">
+        <br><br>
+
+        <!-- Estado Civil -->
+        <label for="estadoCivil">Estado Civil:</label>
+        <select id="estadoCivil" name="estadoCivil">
+            <option value="solteiro">Solteiro</option>
+            <option value="casado">Casado</option>
+            <option value="divorciado">Divorciado</option>
+            <option value="separado">Separado</option>
+        </select>
+        <br><br>
+
+        <!-- Doador de órgãos -->
+        <label >Doador de órgãos:</label>
+        <input type="radio" id="doadorSim" name="doadorOrgaos" value="sim">
+        <label for="doadorSim">Sim</label>
+        <input type="radio" id="doadorNao" name="doadorOrgaos" value="nao">
+        <label for="doadorNao">Não</label>
+        <br><br>
+
+        <!-- Doenças que já teve -->
+        <label >Doenças que já teve:</label>
+        <br>
+        <input type="checkbox" id="catapora" name="doencas[]" value="catapora">
+        <label for="catapora">Catapora</label><br>
+        <input type="checkbox" id="sarampo" name="doencas[]" value="sarampo">
+        <label for="sarampo">Sarampo</label><br>
+        <input type="checkbox" id="caxumba" name="doencas[]" value="caxumba">
+        <label for="caxumba">Caxumba</label><br>
+        <input type="checkbox" id="covid19" name="doencas[]" value="covid19">
+        <label for="covid19">Covid19</label><br>
+        <input type="checkbox" id="dengue" name="doencas[]" value="dengue">
+        <label for="dengue">Dengue</label><br><br>
+
+        <!-- Botão de enviar -->
+        <input type="submit" value="Cadastrar">
+
+    </form>
+    </div>  
+</body>
+</html>
